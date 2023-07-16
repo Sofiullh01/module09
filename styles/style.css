@@ -11,22 +11,22 @@ a{
 }
 img{
     width: 100%;
-    height: 100%;
-    border-radius: 10px;
+    border-radius: 0.6;
 }
 .general-but{
     background-color: rgba(255, 144, 14, 1);
-    width: 165px;
-    height: 57px;
-    border-radius: 10px;
+    width: 8rem;
+    height: 3rem;
+    border-radius: 0.4rem;
     border-style: none;
-    font-size: 20px;
+    font-size: 1rem;
     font-weight: 550;
     color: white;
 }
 /* navigation style */
 header{
-    background-color:rgba(255,244 ,231) ;
+    width: 100%;
+    background-color:rgb(255,244 ,231) ;
 }
 .nav-continer{
     width: 90vw;
@@ -48,12 +48,16 @@ header{
     color: rgba(66, 66, 66, 1);
 }
 /* banner styles */
+.banner-continer{
+    width: 100%;
+}
 .banner-content{
     display: flex;
     align-items: center;
     flex-direction: column;
-    max-width: 700px;
-    margin: 25px auto;
+    /* max-width: 700px; */
+    margin: 15px auto;
+    width: 100%;
 }
 .banner-heah-div{
     display: flex;
@@ -68,10 +72,10 @@ header{
     font-size: 14px;
     font-weight: 400;
     color: #727272;
-    margin: 6% 0%;
+    margin: 6% 30%;
 }
 .banner-img{
-    padding: 0px 10%;
+    padding: 3% 10%;
 }
 
 /* main section style */
@@ -84,7 +88,7 @@ header{
 .main-img-continer{
     display: flex;
     gap: 5px;
-    width: 50%;
+    width: 65%;
 }
 .main-description{
     font-size: 14px;
@@ -93,7 +97,7 @@ header{
     margin: 2rem 0rem;
 }
 .main-text-continer{
-    width: 50%;
+    width: 65%;
 }
 .main-head{
     font-size: 42px;
@@ -101,11 +105,33 @@ header{
 }
 .head-span1{
     color: #727272;
+    font-weight: 400;
 }
 .head-span2{
     color: #FF900E;
 }
-
+/* features styles */
+.features-container{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 10%;
+}
+.features-text-container{
+    width: 50%;
+}
+.features-img-container{
+    width: 50%;
+}
+.features-first-head{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.features-text{
+    font-size: 14px;
+    font-weight: 400;
+    color: #727272;
+}
 
 
 
@@ -118,7 +144,9 @@ header{
     .nav-continer{
         padding: 15px 0px;
     }
-    .nav-continer{
+    .nav-continer,
+    .main-img-continer,
+    .main{
         flex-direction: column;
     }
     .logo-continer{
@@ -135,5 +163,13 @@ header{
     .banner-heah-div{
         margin: 8% 14%;
         padding: auto;
+    }
+    .two-img-div{
+        display: flex;
+        flex-direction: column;
+    }
+    .main{
+        padding:0px;
+        margin: 0rem -3rem;
     }
 }
